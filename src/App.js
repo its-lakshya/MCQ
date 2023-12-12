@@ -1,16 +1,16 @@
 import { Outlet } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
-import Login from "./components/Login";
-import Signin from "./components/Signin";
+import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 import { Provider } from "react-redux";
 import { RouterProvider } from "react-router-dom";
 import Store from "./store/Store";
-import Welcome from "./components/Welcome"
+import Welcome from "./pages/Welcome"
 
 
 const AppLayout = () => {
   return (
-    <div className="bg-black h-screen w-full">
+    <div className="">
       <Outlet/>
     </div>
   );

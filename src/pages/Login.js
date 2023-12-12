@@ -71,8 +71,8 @@ const Login = () => {
             </div>
             <Link
               to={isAuthenticated}
-              className="bg-green-500 w-72 h-12 rounded-3xl px-4 flex items-center justify-center text-white text-lg font-bold
-              hover:bg-gray-700"
+              className="bg-[#1D4645] w-72 h-12 rounded-3xl px-4 flex items-center justify-center text-white text-lg font-bold
+              hover:transition-transform hover:scale-[105%] hover:duration-300"
               onClick={() => handleVisibility()}
             >
               LOGIN

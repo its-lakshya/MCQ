@@ -43,7 +43,7 @@ const Signin = () => {
                 Your account is created now you can login to start!{"\u00A0"}
                 <Link
                   to="/"
-                  className="font-bold bg-green-500 text-white px-6 py-2 rounded-lg"
+                  className="font-bold bg-[#1D4645] text-white px-6 py-2 rounded-lg"
                 >
                   login
                 </Link>
@@ -63,8 +63,8 @@ const Signin = () => {
               />
             </div>
             <button
-              className={`bg-green-500 w-72 h-12 rounded-3xl px-4 flex items-center justify-center text-white text-lg font-bold
-                        hover:bg-gray-700 ${visibility}`}
+              className={`bg-[#1D4645] w-72 h-12 rounded-3xl px-4 flex items-center justify-center text-white text-lg font-bold
+                          hover:transition-transform hover:scale-[105%] hover:duration-300 ${visibility}`}
               onClick={() => {
                 handleLoginDetails();
                 if (name !== null && password !== null) {
