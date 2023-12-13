@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 import { Navigate, useNavigate } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 const Score = () => {
   const score = useSelector((store) => store.scoreDetails.score);
@@ -31,6 +33,7 @@ const Score = () => {
                                 flex items-center justify-center gap-x-3'
             onClick={()=> {handleHome()}}
             >
+                <IoIosArrowBack/>
                 Home
         </button>
     </div>
