@@ -6,6 +6,8 @@ import { Provider } from "react-redux";
 import { RouterProvider } from "react-router-dom";
 import Store from "./store/Store";
 import Welcome from "./pages/Welcome"
+import Mcq from "./pages/Mcq";
+import Score from "./pages/Score";
 
 
 const AppLayout = () => {
@@ -32,6 +34,14 @@ const appRouter = createBrowserRouter([
       {
         path:"welcome",
         element:<Welcome/>
+      },
+      {
+        path:"mcq",
+        element:<Mcq/>
+      },
+      {
+        path:"score",
+        element:<Score/>
       },
       // {
       //   path:"/game",

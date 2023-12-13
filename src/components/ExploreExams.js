@@ -1,6 +1,13 @@
 import { ExamsDetails } from "../utils/Data"
+import { useNavigate } from "react-router-dom";
 
 const ExploreExams = () => {
+    const navigate = useNavigate();
+
+    const handleClick = (category) => {
+        navigate('/mcq',{ state: category  });
+    }
+
     return (
         <div className='h-screen w-full px-48 flex flex-col justify-start items-center gap-y-12'>
             <div className='flex w-full justify-between items-center'>
@@ -11,7 +18,10 @@ const ExploreExams = () => {
                 {ExamsDetails.map((exam) => {
                     return (
                         <div className={`${exam.bgColor} ${exam.textColor} px-3 rounded-md flex flex-col justify-center items-center p-2 gap-y-4 
-                                        shadow-xl shadow-gray-400  cursor-pointer hover:transition-transform hover:scale-[105%] hover:duration-300`}>
+                                        shadow-xl shadow-gray-400  cursor-pointer hover:transition-transform hover:scale-[105%] hover:duration-300`}
+                        key={exam.name}
+                        onClick={()=> handleClick({category:exam.name})}
+                        >
                             <img src={exam.image} alt="linux img" className='w-20 bg-white rounded-full'/>
                             <div className='font-bold text-lg'>{exam.name}</div>
                             <div className='font-extralight text-sm h-24 overflow-clip flex items-center justify-center'>{exam.description}</div>
