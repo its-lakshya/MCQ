@@ -14,7 +14,10 @@ const Mcq = () => {
         return <Navigate to="/" replace />;
     }
     return(
-        <McqQuestions/>
+        <div className='bg-[#1D4645] h-screen w-full flex items-center justify-center'>
+
+            <McqQuestions/>
+        </div>
     )
     
 }

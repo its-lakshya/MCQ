@@ -64,16 +64,16 @@ const McqQuestions = () => {
 
     if(quizData)
     return (
-        <div className='bg-[#1D4645] w-full h-screen flex flex-col px-40 text-white items-center justify-center gap-y-12 py-24'>
+        <div className='bg-[#1D4645] w-full h-screen flex flex-col px-40 text-white items-center justify-center gap-y-12 max-lg:gap-y-8 max-md:gap-y-4 py-24 max-xl:px-20 max-sm:px-10 max-xxs:px-4 max-xl:h-auto'>
             <div className='flex flex-col items-center justify-center gap-y-4'>
-                <div className='font-bold text-5xl'>{category}</div>
+                <div className='font-bold text-5xl max-lg:text-4xl max-md:text-3xl'>{category}</div>
                 <div className='text-lg'>{questionCount+1}/10</div>
             </div>
-            <div className='flex flex-col items-center justify-center gap-y-10 w-full'>
-                <div className='text-3xl font-semibold text-center w-full '>{quizData[questionCount].question}</div>
+            <div className='flex flex-col items-center justify-center gap-y-10 w-full max-md:gap-y-6'>
+                <div className='text-3xl font-semibold text-center w-full max-lg:text-2xl max-md:text-xl'>{quizData[questionCount].question}</div>
                 <form className='flex flex-col gap-10 justify-center items-center text-[#1D4645] font-bold w-full [&>*]:rounded-xl 
                              [&>*]:p-4'>
-                    <div className="flex flex-col justify-center items-start gap-y-10 [&>*]:bg-[#FFF2E6] w-full [&>*]:w-full [&>*]:h-16 [&>*]:rounded-lg">
+                    <div className="flex flex-col justify-center items-start gap-y-10 max-lg:gap-y-6 [&>*]:bg-[#FFF2E6] w-full [&>*]:w-full [&>*]:h-16 [&>*]:rounded-lg [&>*]:px-4 max-md:[&>*]:px-6 max-md:[&>*]:h-auto max-md:text-sm">
                         {quizData[questionCount].answers.answer_a ?
                         <label className="flex items-center">
                             <input

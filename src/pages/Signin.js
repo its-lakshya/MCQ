@@ -34,7 +34,7 @@ const Signin = () => {
         </div>
 
         <div className="w-1/2 flex justify-center items-center max-md:w-full">
-          <div className="h-4/6 w-5/6 flex flex-col items-center justify-center gap-y-12 max-sm:gap-y-6">
+          <div className="h-4/6 w-5/6 flex flex-col items-center justify-center gap-y-12 max-sm:gap-y-12">
             <div className="text-2xl font-extrabold ">Sign In</div>
             {areDetailsFilled !== false &&
             name !== null &&

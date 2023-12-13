@@ -59,12 +59,12 @@ const Login = () => {
             <div className="text-2xl font-extrabold">Member Login</div>
             <div className="flex flex-col gap-y-4">
               <input
-                className=" rounded-3xl w-72 h-12 px-4 font-semibold bg-gray-100"
+                className=" rounded-3xl w-72 h-12 px-4 font-semibold bg-gray-100 max-xxs:w-64"
                 placeholder="Email/Username"
                 onChange={(e) => setUserName(e.target.value)}
               />
               <input
-                className=" rounded-3xl w-72 h-12 px-4 font-semibold bg-gray-100"
+                className=" rounded-3xl w-72 h-12 px-4 font-semibold bg-gray-100 max-xxs:w-64"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -72,7 +72,7 @@ const Login = () => {
             <Link
               to={isAuthenticated}
               className="bg-[#1D4645] w-72 h-12 rounded-3xl px-4 flex items-center justify-center text-white text-lg font-bold
-              hover:transition-transform hover:scale-[105%] hover:duration-300"
+              hover:transition-transform hover:scale-[105%] hover:duration-300 max-xxs:w-64"
               onClick={() => handleVisibility()}
             >
               LOGIN
