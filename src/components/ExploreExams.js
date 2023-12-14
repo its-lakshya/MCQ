@@ -9,9 +9,9 @@ const ExploreExams = () => {
     }
 
     return (
-        <div className='h-screen w-full px-48 flex flex-col justify-start items-center gap-y-12 max-xl:px-20 max-xl:h-auto max-xl:py-10 max-sm:px-10 max-xxs:px-4'>
+        <div className=' w-full px-48 flex flex-col justify-start items-center gap-y-12 max-xl:px-20 max-xl:py-10 max-sm:px-10 max-xxs:px-4 bg-red-300 my-12'>
             <div className='flex w-full justify-between items-center max-xxs:flex-col max-xxs:gap-y-4'>
-                <span className='text-[#1D4645] text-4xl font-bold capitalize max-md:text-3xl max-xxs:text-2xl max-xxs:text-center'>Explore Our Quiz Categories</span>
+                <span className='text-[#1D4645] text-4xl font-bold capitalize max-md:text-3xl max-xxs:text-2xl max-xxs:text-center'>Explore Our Exam Categories</span>
                 <button className='cursor pointer border border-[#1D4645] p-3 max-xs:p-1 uppercase rounded-md w-36 flex justify-center items-center max-md:text-sm hover:bg-[#E8C5B0] hover:bg-opacity-30'>Explore All</button>
             </div>
             <div className='flex flex-wrap w-full gap-12 [&>*]:w-80 [&>*]:h-80  justify-between max-lg:gap-8 max-lg:[&>*]:w-[17.5rem] max-lg:[&>*]:h-[17.5rem]
